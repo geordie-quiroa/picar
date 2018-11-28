@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PiCAR-S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body onload="socketEvents()">
+  <div class="header">
+    Encedido
+    <label class="switch">
+      <input type="checkbox" onclick='onOff(this);'>
+      <span class="slider round"></span>
+    </label>
+
+    Velocidad
+    <span><b id="speed">1000</b></span>
+  </div>  
+  <div class="content">
+    <h1>Sensor data</h1>    
+    <ul class="sensor-array">
+      <hr class="threshold-line">
+      <li>
+        <div class="sensor">
+          <div class="sensor-data">
+            <span class="sensor-value"></span>
+          </div>
+          <span class="sensor-threshold">0</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="sensor">
+          <div class="sensor-data">
+            <span class="sensor-value"></span>
+          </div>
+          <span class="sensor-threshold">0</span>
+        </div>
+      </li>
+      <li>
+        <div class="sensor">
+          <div class="sensor-data">
+            <span class="sensor-value"></span>
+          </div>
+          <span class="sensor-threshold">0</span>
+        </div>
+      </li> 
+      <li>
+        <div class="sensor">
+          <div class="sensor-data">
+            <span class="sensor-value"></span>
+          </div>
+          <span class="sensor-threshold">0</span>
+        </div>
+      </li>
+      <li>
+        <div class="sensor">
+          <div class="sensor-data">
+            <span class="sensor-value"></span>
+          </div>
+          <span class="sensor-threshold">0</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Direction</h1>
+    <div id="direction-arrow">🡑</div>
+  </div>
+
+  <div class="content">
+    <h1>Track Trace</h1>
+  </div>
+
+  <div class="content">
+    <h1>Laps</h1>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

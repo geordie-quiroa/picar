@@ -1,0 +1,19 @@
+eje_delantero:
+  turning_angle: 20
+  turning_max: 35
+  a_step: 3
+  b_step: 10
+  c_step: 25
+  d_step: 35
+
+sensor_IR:
+  delay: 0.001
+  calibrate: False
+  referencia: 320 #350
+  referencias: [320, 320, 320, 320, 320]
+
+traccion_trasera:
+  forward_speed: 50
+  backward_speed: 30
+  straight_run: 70
+  turbo: 90
